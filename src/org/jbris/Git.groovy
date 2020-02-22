@@ -69,4 +69,8 @@ class Git extends PipelineBase {
         }     
     }
 
+    def getLatestCommit() {
+        sh("git rev-parse HEAD")
+    }
+
 }
